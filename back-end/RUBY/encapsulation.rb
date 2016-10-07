@@ -1,5 +1,5 @@
 class Document
-	attr_accessor:name
+	# attr_accessor:name
 
 	def initialize(name)
 		@name=name
@@ -7,7 +7,7 @@ class Document
 	end
 
 	def set_name(name)
-		@name=name
+		name
 	end
 
 	def display_name
@@ -17,3 +17,4 @@ end
 
 d=Document.new('name1')
 d.set_name('name1')
+d.display_name

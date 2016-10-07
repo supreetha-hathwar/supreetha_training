@@ -15,13 +15,13 @@ class Parent
 end
 
 class Child < Parent
-	# def access_private
-	# 	method_B
-	# end
 	def access_private
-		c1=Child.new
-		c1.method_B
+		method_B 
 	end
+	# def access_private
+	# 	c1=Child.new
+	# 	c1.method_B
+	# end
 
 	# def acess_protected
 	# 	method_c
@@ -39,5 +39,5 @@ end
 
 c=Child.new
 c.method_A
-# c.access_private
+ c.access_private
 c.access_protected
