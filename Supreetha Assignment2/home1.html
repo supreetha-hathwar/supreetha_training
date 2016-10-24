@@ -1,0 +1,440 @@
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<title>Pizza Palace!</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+			
+		    <meta name="viewport" content="width=device-width, initial-scale=1">
+		    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+		    <link rel="stylesheet" type="text/css" href="mystyle.css">
+	    </head>
+
+	<style type="text/css">
+		body{
+			background-color:Ivory;
+		}
+		.dropbtn {
+	    background-color:azure;
+	    color: white;
+	   padding: 16px;
+	    font-size: 30px;
+	    border: none;
+	    cursor: pointer;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: azure;
+		min-width: 16px;
+		
+	}
+	.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+
+	.dropdown-content a:hover {background-color:gray }
+
+	.dropdown:hover .dropdown-content {
+
+	}
+
+	.dropdown:hover .dropbtn {
+		background-color:gray;
+	}
+	 	.dropdown {
+	    position: relative;
+	    display: inline-block;
+	    font-size: 30px;
+	    background-color:gray;
+	}
+	.mySlides {display:none;}
+
+	#tag{
+		padding: 10px 10px;
+		background-color:Chocolate;
+		color:unset;
+		border:solid;
+		font-style: italic;
+		font-size: 40px;
+		border-radius: 25px;
+		test-align:w3-center;
+	}
+	input[type=text] {
+		width: 130px;
+		box-sizing: border-box;
+		border: 2px solid #ccc;
+		border-radius: 4px;
+		font-size: 16px;
+		background-color: white;
+		background-image: url('images/search.png');
+		background-position: 10px 10px;
+		background-repeat: no-repeat;
+		padding: 12px 20px 12px 40px;
+		-webkit-transition: width 0.4s ease-in-out;
+		transition: width 0.4s ease-in-out;
+		float:right;
+	}
+
+	input[type=text]:focus {
+		width: 100%;
+	}
+	.center{
+		margin:auto;
+	}
+	/*.scrollToTop{
+		/*width:10px; 
+		height:10px;*/
+		/*padding:10px; 
+		text-align:center; 
+		background: whiteSmoke;
+		font-weight: bold;
+		color: #444;
+		text-decoration: none;
+		position:fixed;
+		/*top:75px;*/
+		/*right:40px;*/
+		/*display:none;*/
+		/*background: url('images/arrow.png') no-repeat 0px 20px;
+	/*}*//*/
+	/*.scrollToTop:hover{
+		text-decoration:none;
+	}*/
+
+	</style>
+	<body>
+		<div class="container" style="display:block" >
+			<div class="row" style="background-color:coral">
+				<div class="col-xs-2" style="padding:22px">
+
+					<img src="images/pizza.jpg" alt="text"  class="homeLogo">
+
+				</div>
+				<div class="col-xs-6" style="padding:8px">
+					<h1 id="head">Pizza Palace</h1>
+				</div>
+				<div class="col-xs-1" style="padding:45px">
+					<a href="http://twitter.com">
+						<img  src="images/twitter.png" alt="text" height="80px" width="80px" >
+					</a>
+				</div>
+				<div class="col-xs-1" style="padding:45px">
+					<a href="http://facebook.com">
+						<img  src="images/Facebook.png" alt="text" height="80px" width="80px" >
+					</a>
+				</div>
+				<div class="col-xs-1" style="padding:45px">
+					<a href="http://linkedin.com">
+						<img  src="images/Linkedin.png" alt="text" height="80px" width="80px" >
+					</a>
+				</div>
+			</div></br>
+		</div>
+
+		<div class="contaniner" style="display:block">
+			<div class="row" >
+
+				<div class="col-xs-4" >
+					<a id="home" class="h1">Home</a>
+				</div>
+
+				<div class="col-xs-2" onclick="aboutDisp()" id="abtNav">
+					<a style="font-size:30px" class="a1">About</a>
+				</div>
+
+				<div class="col-xs-2">
+					<div class="dropdown">
+						<button class="btn-btn-primary-dropdown-toggle" type="button" data-toggle="dropdown" style="font-size:30px">Products
+							<span class="caret"></span></button>
+							<ul class="dropdown-menu" style="background-color:azure">
+								<li><a class="menu" href="#">Pizza</a></li>
+								<li><a class="menu" href="#">Pasta</a></li>
+								<li><a class="menu" href="#">Drinks</a></li>
+							</ul>
+						</div>
+					</div>
+
+
+					<div class="col-xs-2">
+						<a id="blog" href="#blog">Blog</a>
+					</div>
+
+					<div class="col-xs-2">
+						<a class="contact" href="#Contact" style="padding-right:50cm">Contact</a>
+					</div>
+
+				</div>
+			</div>
+		</div></br>
+		<!-- </div> -->
+		<div class="home1" style="display:block">
+			<div class="container">
+				<div class="row">
+					<div class="w3-content w3-section" style="max-width:1150px">
+						<img class="mySlides" src="images/pizza8.jpg" style="width:100%">
+						<img class="mySlides" src="images/pizza4.jpg" style="width:100%">
+						<img class="mySlides" src="images/pizza5.jpg" style="width:100%">
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="w3-center">
+						<div class="w3-section">
+							<button class="w3-btn" onclick="plusDivs(-1)">Prev</button>
+							<button class="w3-btn demo" onclick="currentDiv(1)">1</button>
+							<button class="w3-btn demo" onclick="currentDiv(2)">2</button>
+							<button class="w3-btn demo" onclick="currentDiv(3)">3</button>
+							<button class="w3-btn" onclick="plusDivs(1)">Next </button>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="container"> -->
+				<div class="row">
+					<div class="col-xs-6"></div>
+					<div class="col xs-4"><h1 id="tag" style="text-align:center">Make it Great!!!</h1>
+					</div>
+				</div>
+	<!-- </div>
+	-->
+
+	<!-- <div class="container"> -->
+
+	<div class="row">
+		<form>
+			<input type="text" name="search" placeholder="Search" >
+		</form>
+	</div>
+
+	</div></br>
+
+	<div class="container" style="display:block">
+		<div class="row">
+			<div class="col-xs-4"style="border:solid; color:grey; test-align:justify;background-color:LightBlue;">
+				<p style="background-color:cornsilk"><h2>Margherita</h2>
+					Top with the tomatoes, oregano, some basil leaves and mozzarella rounds. Carefully remove the pizza stone from the oven, 
+					and dust with the cornmeal. Place the pizza on top of the stone and pop the whole thing in the oven. Bake until crust is
+					golden and the cheese has melted, about 10 minutes.</p>
+				</div>
+				<div class="col-xs-4" style="border:solid; color:grey;background-color:LightBlue">
+					<p><h2>Barbeque Chicken</h2>
+						Place pizza crust on a medium baking sheet. Spread the crust with barbeque sauce. Top with chicken, cilantro, pepperoncini peppers, onion, and cheese. Bake in the preheated oven for 15 minutes, or until cheese is melted and bubbly. Sweet BBQ sauce, chopped chicken.
+					</p></div>
+
+					<div class="col-xs-4" style="border:solid; color:grey;;background-color:LightBlue;">
+						<p class="center"><h2>Exotic Italian Pizza</h2>
+							Florence's exotic taste of Chicken Italian sausage in butter garlic flavor, barbeque chicken and jalapeno. Freshly baked & hand-crafted- thin, crispy, buttery crust with wood-fired seasoned pizza sauce and olive oil. Experience true Italian flavors like never before.
+						</p>
+					</div>
+
+				</div>
+				<!-- </div> --></br>
+
+
+				<div class="Container" style="display:block">
+				<div class="row">
+					<div class="col-xs-4">
+						<button  class="button"  style="height:30px;width:200px;">Info</button>
+					</div>
+					<div class="col-xs-4">
+						<button  class="button"  style="height:30px;width:200px;">Info</button>
+					</div>
+					<div class="col-xs-4">
+						<button  class="button" style="height:30px;width:200px">Info</button>
+					</div>
+				</div>
+				</div></br>
+
+				<!-- <div class="container" > -->
+				<div class="row">
+					<div class="col-xs-8">
+						<img src="images/palace.jpg" alt="text" style="width:630px;margin:auto;">
+					</div>
+
+					<div class="col-xs-4" style="border:solid;color:grey;font-family:Arial;background-color:LightSteelBlue">
+						<p>We open this pizza joint for Reisterstown. We believe in fresh ingredient and customer's satisfaction.
+							PIZZA PALACE have been serving up delicious tastes such as pizza, pasta,  salads, gyro, platters and much more.
+							We invite you to stop in PIZZA PALACE and enjoy Reisterstown's outstanding pizza in an wonderful atmosphere that
+							you will have to see to believe.Our unique pizza crust comes from a traditional, generations-old family recipe and 
+							is hand-made each morning throughout the year.  Pizza Palace is about much more than pizzas. From freshly sauteed pastas & delicious appetizers to mocktails, desserts, soups and salads, we have a wide range for you to feast on. Have fun!
+						</p>
+					</div>
+				</div></br>
+
+				<div class="row">
+					<div class="col-xs-8" style=" border:solid;text-align:justify;background-color:Linen">
+						<p><h4 style="font-family:Arial">
+							All this, combined with the warm, inviting ambience and friendly service, will lead to endless conversations, laughter and memories that you'll cherish forever. </h4>
+						</p>
+					</div>
+					<div class="col-xs-2">
+						<a class="more"style="font-size:25px;color:blue;">More</a>
+					</div>
+
+					<div class="col-xs-2">
+						<a style="font-size:25px;padding:15px" href="#" class="scrollToTop">ScrollToTop</a>
+					</div>
+				</div></br>
+
+				
+
+				<div class="row">
+
+				<div class="col-xs-12">
+						<div class="panel panel-default" style="background-color:gray;">
+							<div class="panel-heading" style="background-color:gray;">
+								<a href="#home">Home|</a>
+								<a>About|</a>
+								<a href="#Products">Products|</a>
+								<a href="#blog">Blog|</a>
+								<a href="#contact">Contact</a>
+							</div>
+							<div class="panel-body"><p style="font-size:15px;font-family:Arial">@ 2016 Pizza Palace, Inc. All rights reserved. The Pizza Palace name, logos and related marks are trademarks of Pizza Palace, Inc.</p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+
+	<div class="about" style="display:none">
+		<div class="container">
+			<div class="row" style="background-color:#ea6060; color:white; padding-left:20px"> <h1>About us</h1></div>
+			<div class="row">
+				<div class="col-xs-12">
+					<p style="font-family:Arial">WHO WE ARE.</br>
+						There is nothing cookie-cutter about Pizza Hut. Not our pizzas. Not our people. And definitely not the way we live life. Around here, we do not settle for anything less than food we are proud to serve. And we do not just clock in. Not when we can also become our best, make friends, and have fun while we are at it. We are the pizza company that lives life unboxed.
+
+						We’re not for people who want to blend in: pushing boundaries is part of our heritage. Whether it is the original Stuffed Crust or putting a pizza in outer space, we never stop driving ourselves to deliver the most delicious innovations in the industry.</br>
+
+						WHAT WE ARE ABOUT.</br>
+						At Pizza Hut, we do not just make pizza. We make people days. Pizza Hut was built on the belief that pizza night should be special, and we carry that belief into everything we do. What is our purpose at Pizza Hut? Moments of Excitement.  All made possible by our flavor, innovation and, most importantly, by unlocking potential in our team members.
+
+						With more than 55 years of experience under our belts, we understand how to best serve our customers through tried and true service principles. Instead of following trends, we set them. We create food we are proud to serve and deliver it fast, with a smile.
+
+						We are the people who first delivered pizza to the White House. We put a pizza in outer space.  We took social media by storm. Our ordering app was featured in an iPhone commercial. Pizza Hut stands for bold innovation.</p>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="panel panel-default" style="background-color:#ea6060;">
+							<div class="panel-heading" style="background-color:#ea6060;text-align:center;">
+								<a href="#home">Home|</a>
+								<a href="#about">About|</a>
+								<a href="#Products">Products|</a>
+								<a href="#blog">Blog|</a>
+								<a href="#contact">Contact</a>
+							</div>
+							<div class="panel-body"><p style="font-size:15px">@ 2016 Pizza Palace, Inc. All rights reserved. The Pizza Palace name, logos and related marks are trademarks of Pizza Palace, Inc.</p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<script>
+
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+
+		function currentDiv(n) {
+			showDivs(slideIndex = n);
+		}
+
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("demo");
+			if (n > x.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = x.length}
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";
+					}
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" w3-red", "");
+					}
+					x[slideIndex-1].style.display = "block";
+					dots[slideIndex-1].className += " w3-red";
+				}
+
+				var myIndex = 0;
+				carousel();
+
+				function carousel() {
+					var i;
+					var x = document.getElementsByClassName("mySlides");
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";
+					}
+					myIndex++;
+					if (myIndex > x.length) {myIndex = 1}
+						x[myIndex-1].style.display = "block";
+					setTimeout(carousel, 15000); 
+				}
+
+	// $(document).ready(function(){
+		
+	// 	//Check to see if the window is top if not then display button
+	// 	$(window).scroll(function(){
+	// 		if ($(this).scrollTop() > 100) {
+	// 			$('.scrollToTop').fadeIn();
+	// 		} else {
+	// 			$('.scrollToTop').fadeOut();
+	// 		}
+	// 	});
+		
+	// 	//Click event to scroll to top
+	// 	$('.scrollToTop').click(function(){
+	// 		$('html, body').animate({scrollTop : 0},800);
+	// 		return false;
+	// 	});
+		jQuery('.a1').click(function(){
+			jQuery('.home1').css('display','none');
+			jQuery('.about').css('display',"block");
+		});
+
+		jQuery('.homeLogo').click(function(){
+			jQuery('.home1').css('display','block');
+			jQuery('.about').css('display','none');
+		});
+		jQuery('.h1').click(function(){
+			jQuery('.home1').css('display','block');
+			jQuery('.about').css('display','none');
+		});
+		jQuery('.more').click(function(){
+			jQuery('.home1').css('display','none');
+			jQuery('.about').css('display','block');
+		});
+		jQuery('.button').click(function(){
+			jQuery('.home1').css('display','none');
+			jQuery('.about').css('display','block');
+		});
+
+
+	</script>
+
+
+	</body>
+	</html>
