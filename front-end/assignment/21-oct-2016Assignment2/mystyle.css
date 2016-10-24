@@ -1,0 +1,89 @@
+	#head{
+		font-style:oblique;
+		color: white;
+		font-size: 90px;
+		padding:20px;
+		border-color:black;
+
+	}
+
+	.image{
+		height:10px;
+		width:10px;
+		padding-top: 30px;
+	}
+	#home{
+				font-size: 30px;
+				margin-right: 20px;
+				padding-left: 200px;
+				font-color:red;
+			}
+	#about{
+	font-size: 30px;
+
+	}
+	#products{
+	font-size: 30px;
+	}
+	#blog{
+	font-size: 30px;
+	}
+	.contact{
+	font-size: 30px;
+	padding-right: 900cm;
+	}
+
+	.menu{
+	font-size:20px;
+	}
+	.test {
+	width: 80px;
+	height:200px;
+	width:200px;
+
+	}
+	.btn-btn-primary-dropdown-toggle{
+		background-color:Ivory;
+
+	}
+	*Mobile portrait*/
+ @media (max-width: 480px) {
+ 	h1{
+ 		font-size: 12px;
+ 	}
+
+  }
+
+/*mobile landscape*/
+@media (min-width: 481px) and (max-width: 599px) { 
+	h1{
+		font-size:20px;
+	}
+}
+
+
+
+
+ / * small tablet portrait*/
+@media (min-width: 600px) and (max-width: 767px) {
+	h1{
+		font-size: 38px;
+	}
+}
+
+
+
+/*small tablet landscape*/
+@media (min-width: 768px) and (max-width: 959px) {
+	h1{
+		font-size: 40px;
+	}
+ }
+
+
+/*Tablet landscape (1024x768)*/
+@media (min-width: 960px) and (max-width: 1199px) { 
+	h1{
+		font-size: 48px;
+	}
+}
