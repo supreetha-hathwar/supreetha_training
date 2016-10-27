@@ -1,0 +1,14 @@
+ <h1>Enter Details</h1>
+<body bgcolor="lightgreen">
+ <%= form_for @user, url: user_create_path do |f| %>
+ <p>
+ <h2 style="font-style:italic">Enter FirstName:<%= f.text_field :Firstname %></br></br></h2></p>
+ <p>
+ <h2 style="font-style:italic">Enter Lastname:<%= f.text_field :Lastname %></br></br></h2></p>
+ <p>
+ <h2 style="font-style:italic">Enter Email:<%= f.text_field :Email %></br></br></h2></p>
+ <p>
+ <h2 style="font-style:italic">Enter Password:<%= f.password_field :Password%></br></br></h2></p>
+ <p ><%= f.submit :submit%></p>
+ <%end%>
+ </body>

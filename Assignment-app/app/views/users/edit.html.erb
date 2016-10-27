@@ -1,0 +1,17 @@
+ <h1>Edit Users</h1>
+<body bgcolor="chocolate">
+<%= form_for @user, url:user_edit_path(@user),method: :put  do |f| %>
+<p><h2 style="font-style:italic">
+
+ First Name:<%= f.text_field :Firstname %></br></br></h2></p>
+<p><h2 style="font-style:italic">
+ Last Name:<%= f.text_field :Lastname %></br></br></h2></p>
+<p><h2 style="font-style:italic">
+ Email:<%= f.text_field :Email %></br></br></h2></p>
+<p><h2 style="font-style:italic">
+ Password:<%= f.password_field :Password %></br></br></h2></p>
+<p>
+ <%= f.submit :submit%></p>
+ 
+ <% end%>
+ </body>
