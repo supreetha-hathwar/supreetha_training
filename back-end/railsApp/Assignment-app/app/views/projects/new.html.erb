@@ -1,0 +1,21 @@
+ <h1>Enter Details</h1>
+
+ <%= form_for @project, url: project_create_path do |f| %>
+
+ 
+
+
+ <p>
+ <h2 style="font-style:italic">Enter Name:<%= f.text_field :name %></br></br></h2></p>
+ <p>
+ <h2 style="font-style:italic">Enter Duration:<%= f.text_field :duration %></br></br></h2></p>
+ <p>
+ <h2 style="font-style:italic">Enter Team Size:<%= f.text_field :teamsize %></br></br></h2></p>
+ <p>
+ <h2 style="font-style:italic">Enter Cost:<%= f.password_field :cost%></br></br></h2></p>
+ <p >
+ <p>
+  <h2 style="font-style:italic">Enter Cost:<%= f.password_field :domain%></br></br></h2></p>
+
+ <%= f.submit :submit%>
+ <%end%>
