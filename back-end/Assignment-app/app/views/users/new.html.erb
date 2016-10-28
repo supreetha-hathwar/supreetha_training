@@ -1,0 +1,28 @@
+ <h1>Enter Details</h1>
+<body bgcolor="lightgreen">
+ <%= form_for @user, url: user_create_path do |f| %>
+
+ <%if @user.errors.any? %>
+ <!-- <div id="errorExplaination"> -->
+
+ <h2><%pluralize(@user.errors.count,"error") %>Prohibited this user from being saved</h2>
+ <ul>
+ <% @user.errors.full_messages.each do |msg|%>
+ <li><%= msg%></li>
+ <%end%>
+ </ul>
+ <!-- </div> -->
+ <% end %>
+
+
+ <p>
+ <h2 style="font-style:italic">Enter FirstName:<%= f.text_field :firstname %></br></br></h2></p>
+ <p>
+ <h2 style="font-style:italic">Enter Lastname:<%= f.text_field :lastname %></br></br></h2></p>
+ <p>
+ <h2 style="font-style:italic">Enter Email:<%= f.text_field :email %></br></br></h2></p>
+ <p>
+ <h2 style="font-style:italic">Enter Password:<%= f.password_field :password%></br></br></h2></p>
+ <p ><%= f.submit :submit%></p>
+ <%end%>
+ </body>
